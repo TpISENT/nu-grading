@@ -1,0 +1,20 @@
+uuid: 137b3381-4a71-4f5e-adc9-b30e255cf0f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - feeds
+    - webform
+id: feeds_feed.field_student_name
+field_name: field_student_name
+entity_type: feeds_feed
+type: webform
+settings:
+  target_type: webform
+module: webform
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

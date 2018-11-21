@@ -1,0 +1,38 @@
+uuid: 85d9cb76-ebae-43a2-a183-7d4a078f6d37
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.head_of_department
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - tourismplus
+id: views_block__head_of_department_block_1
+theme: tourismplus
+region: banner
+weight: 0
+provider: null
+plugin: 'views_block:head_of_department-block_1'
+settings:
+  id: 'views_block:head_of_department-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      head_of_department: head_of_department
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

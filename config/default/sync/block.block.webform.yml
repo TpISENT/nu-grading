@@ -1,0 +1,39 @@
+uuid: 36177584-e184-4ff1-8f38-0e851129892d
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.submit_grade
+  module:
+    - system
+    - user
+    - webform
+  theme:
+    - tourismplus
+id: webform
+theme: tourismplus
+region: content_top
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'SUBMIT GRADE'
+  provider: webform
+  label_display: visible
+  webform_id: submit_grade
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      lecturers: lecturers
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

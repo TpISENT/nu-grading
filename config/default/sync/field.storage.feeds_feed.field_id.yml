@@ -1,0 +1,20 @@
+uuid: ca6b4050-59f9-4457-adb3-b0ddedb5fe3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - feeds
+    - webform
+id: feeds_feed.field_id
+field_name: field_id
+entity_type: feeds_feed
+type: webform
+settings:
+  target_type: webform
+module: webform
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

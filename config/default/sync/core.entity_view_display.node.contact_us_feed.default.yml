@@ -1,0 +1,62 @@
+uuid: f667e24e-2c18-45e2-b7ba-57b318145568
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contact_us_feed.body
+    - field.field.node.contact_us_feed.field_message
+    - field.field.node.contact_us_feed.field_subject
+    - field.field.node.contact_us_feed.field_y
+    - field.field.node.contact_us_feed.field_your_email
+    - node.type.contact_us_feed
+  module:
+    - text
+    - user
+id: node.contact_us_feed.default
+targetEntityType: node
+bundle: contact_us_feed
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_message:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_subject:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_y:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_your_email:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

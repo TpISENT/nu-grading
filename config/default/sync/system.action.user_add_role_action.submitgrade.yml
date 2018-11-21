@@ -1,0 +1,14 @@
+uuid: 5e429f49-2fe5-442a-a19f-f02857527102
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.submitgrade
+  module:
+    - user
+id: user_add_role_action.submitgrade
+label: 'Add the Submitgrade role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: submitgrade

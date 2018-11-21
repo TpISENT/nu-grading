@@ -1,0 +1,26 @@
+uuid: 142a498c-db76-4c7b-945c-564164e855f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - tourismplus
+_core:
+  default_config_hash: sedi81lar511qJTAw71Em9Ru4yqwKMYH_p2-M--a-74
+id: tourismplus_account_menu
+theme: tourismplus
+region: hidden_blocks_collection
+weight: -5
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

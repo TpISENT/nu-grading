@@ -1,0 +1,22 @@
+uuid: 507dec8d-5c46-4d3c-937c-ee5a823db457
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - tourismplus
+_core:
+  default_config_hash: s56E2uVG6G8rNt6MOk9Zs-X8vURxsXjbEfVZdMBIoLw
+id: tourismplus_search
+theme: tourismplus
+region: hidden_blocks_collection
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

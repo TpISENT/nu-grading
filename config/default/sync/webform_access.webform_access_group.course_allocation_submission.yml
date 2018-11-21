@@ -1,0 +1,10 @@
+uuid: bbe5831d-580b-4ad0-8696-90bcefc8591d
+langcode: en
+status: true
+dependencies: {  }
+id: course_allocation_submission
+label: 'Course Allocation Submission'
+description: ''
+type: ''
+permissions:
+  - create

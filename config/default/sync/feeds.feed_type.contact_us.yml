@@ -1,0 +1,44 @@
+uuid: 86f2b54c-3123-409a-9b8a-614bebddc720
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.contact
+  module:
+    - webform
+label: 'Contact Us'
+id: contact_us
+description: ''
+import_period: 0
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: TAB
+  no_headers: false
+  line_limit: 100
+processor: 'entity:webform_submission'
+processor_configuration:
+  update_existing: 0
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    webform_id: contact
+custom_sources: {  }
+mappings:
+  -
+    target: entity_type
+    map:
+      value: 'parent:item_count'
+    unique: {  }
+  -
+    target: entity_type
+    map:
+      value: 'parent:item_count'
+    unique: {  }

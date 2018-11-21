@@ -1,0 +1,36 @@
+uuid: f4aa410c-bb00-42d1-a425-bfb4ed31c9d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.grade_submission
+    - field.storage.feeds_feed.field_student_name
+    - webform.webform.grade_checking_system
+  module:
+    - webform
+id: feeds_feed.grade_submission.field_student_name
+field_name: field_student_name
+entity_type: feeds_feed
+bundle: grade_submission
+label: 'Student Name'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 34e50d0c-25c0-4a90-81a3-dcdf8f7f954a
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  default_data: ''
+  status: open
+  open: ''
+  close: ''
+field_type: webform

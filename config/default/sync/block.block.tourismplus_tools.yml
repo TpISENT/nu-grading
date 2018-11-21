@@ -1,0 +1,26 @@
+uuid: d3f41027-36ac-4a71-8505-ddcf83a2b149
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - tourismplus
+_core:
+  default_config_hash: pZHeuXLre-zANaU0IN5J_r5dN7jPSig9H7vCbApVhAU
+id: tourismplus_tools
+theme: tourismplus
+region: hidden_blocks_collection
+weight: -2
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

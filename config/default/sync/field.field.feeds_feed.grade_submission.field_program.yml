@@ -1,0 +1,36 @@
+uuid: e6b4d31e-3180-4c87-890e-431e1ff18f3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.grade_submission
+    - field.storage.feeds_feed.field_program
+    - webform.webform.grade_checking_system
+  module:
+    - webform
+id: feeds_feed.grade_submission.field_program
+field_name: field_program
+entity_type: feeds_feed
+bundle: grade_submission
+label: Program
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 34e50d0c-25c0-4a90-81a3-dcdf8f7f954a
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  default_data: ''
+  status: open
+  open: ''
+  close: ''
+field_type: webform

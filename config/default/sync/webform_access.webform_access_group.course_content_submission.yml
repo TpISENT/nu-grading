@@ -1,0 +1,10 @@
+uuid: 0fb83019-85bd-4b91-bd9f-1d7cc61f88b0
+langcode: en
+status: true
+dependencies: {  }
+id: course_content_submission
+label: 'Course Content Submission'
+description: ''
+type: ''
+permissions:
+  - create

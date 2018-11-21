@@ -1,0 +1,10 @@
+uuid: 76495a3f-adcf-47e7-852d-adc0765ff9c1
+langcode: en
+status: true
+dependencies: {  }
+id: grade_submission
+label: 'Grade Submission'
+description: ''
+type: ''
+permissions:
+  - create

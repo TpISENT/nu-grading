@@ -1,0 +1,115 @@
+uuid: 46d5a335-e383-4e92-a148-59d4daf0777f
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.grade_submission
+    - field.field.feeds_feed.grade_submission.field_academic_year
+    - field.field.feeds_feed.grade_submission.field_course
+    - field.field.feeds_feed.grade_submission.field_grade
+    - field.field.feeds_feed.grade_submission.field_id
+    - field.field.feeds_feed.grade_submission.field_program
+    - field.field.feeds_feed.grade_submission.field_semester
+    - field.field.feeds_feed.grade_submission.field_student_name
+    - field.field.feeds_feed.grade_submission.field_year
+  module:
+    - feeds
+    - user
+    - webform
+id: feeds_feed.grade_submission.default
+targetEntityType: feeds_feed
+bundle: grade_submission
+mode: default
+content:
+  field_academic_year:
+    weight: 4
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_course:
+    weight: 10
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_grade:
+    weight: 9
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_id:
+    weight: 6
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_program:
+    weight: 3
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_semester:
+    weight: 5
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_student_name:
+    weight: 8
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_year:
+    weight: 7
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  imported:
+    label: inline
+    type: timestamp_ago
+    weight: 1
+    region: content
+    settings:
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
+    third_party_settings: {  }
+  next:
+    label: inline
+    type: timestamp
+    weight: 1
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  source:
+    label: inline
+    type: feeds_uri_link
+    weight: -3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

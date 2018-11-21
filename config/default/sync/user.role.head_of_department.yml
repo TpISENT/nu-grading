@@ -1,0 +1,12 @@
+uuid: 2067cf6a-f85d-4819-a865-0d00bd2ff1ea
+langcode: en
+status: true
+dependencies: {  }
+id: head_of_department
+label: 'Head of Department'
+weight: 5
+is_admin: null
+permissions:
+  - 'delete any webform submission'
+  - 'edit any webform submission'
+  - 'view own webform submission'

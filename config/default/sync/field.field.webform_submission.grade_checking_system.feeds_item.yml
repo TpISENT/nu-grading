@@ -1,0 +1,23 @@
+uuid: ada3fc2b-f05c-410c-b393-15f27f7865b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.webform_submission.feeds_item
+    - webform.webform.grade_checking_system
+  module:
+    - feeds
+id: webform_submission.grade_checking_system.feeds_item
+field_name: feeds_item
+entity_type: webform_submission
+bundle: grade_checking_system
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

@@ -1,0 +1,22 @@
+uuid: e1e0ba2b-797d-4c21-803d-a9b2b4a2aaf7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tourismplus
+_core:
+  default_config_hash: _zZtCIHstMc830Q-9ktRSnGBJBE6pqpVq7N8vLZAgNo
+id: tourismplus_content
+theme: tourismplus
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

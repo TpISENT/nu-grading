@@ -1,0 +1,14 @@
+uuid: 033e7888-4439-4abc-bb6b-d95528eb3bb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.head_of_department
+  module:
+    - user
+id: user_add_role_action.head_of_department
+label: 'Add the Head of Department role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: head_of_department

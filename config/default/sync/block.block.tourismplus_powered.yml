@@ -1,0 +1,22 @@
+uuid: a91290ec-34db-48e4-a7f6-48e14893e5d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tourismplus
+_core:
+  default_config_hash: slKwWqZAIAhQ9xXVJCU6SjxhAQovUN5hDbs-EkjqyLw
+id: tourismplus_powered
+theme: tourismplus
+region: hidden_blocks_collection
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

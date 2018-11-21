@@ -1,0 +1,38 @@
+uuid: 5a70e3b7-3281-4487-ab9f-b3fff382705b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.course_allocation2
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - tourismplus
+id: views_block__course_allocation2_block_1
+theme: tourismplus
+region: system_messages
+weight: 0
+provider: null
+plugin: 'views_block:course_allocation2-block_1'
+settings:
+  id: 'views_block:course_allocation2-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      secretariats: secretariats
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

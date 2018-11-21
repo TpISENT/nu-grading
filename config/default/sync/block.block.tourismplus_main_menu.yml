@@ -1,0 +1,26 @@
+uuid: 60168f0b-dc89-4c91-bb1d-a6680f4b7d8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - tourismplus
+_core:
+  default_config_hash: 0hBZW5jvGcUue0jrQYp88tvqSalkqCynGfvLnbGTiSE
+id: tourismplus_main_menu
+theme: tourismplus
+region: header
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

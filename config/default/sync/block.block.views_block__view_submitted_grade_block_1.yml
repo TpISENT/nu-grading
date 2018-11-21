@@ -1,0 +1,38 @@
+uuid: 46e3199f-1045-4637-85ce-81e8f9b533b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.view_submitted_grade
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - tourismplus
+id: views_block__view_submitted_grade_block_1
+theme: tourismplus
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:view_submitted_grade-block_1'
+settings:
+  id: 'views_block:view_submitted_grade-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

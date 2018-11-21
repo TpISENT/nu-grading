@@ -1,0 +1,14 @@
+uuid: 3800b667-fb81-4533-94c3-ef292ccce500
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.lecturers
+  module:
+    - user
+id: user_add_role_action.lecturers
+label: 'Add the Lecturers role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: lecturers

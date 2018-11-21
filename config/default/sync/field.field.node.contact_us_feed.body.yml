@@ -1,0 +1,22 @@
+uuid: baec3d79-7dce-468a-a26d-db88e65545ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.contact_us_feed
+  module:
+    - text
+id: node.contact_us_feed.body
+field_name: body
+entity_type: node
+bundle: contact_us_feed
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,20 @@
+uuid: 0bb7e205-78a2-4f75-b2aa-df6637a41f7e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tourismplus
+_core:
+  default_config_hash: gtBwb9YxwsIxefrfC5gmkg6MnKHk6kmGo64b81JZwpk
+id: tourismplus_page_title
+theme: tourismplus
+region: hidden_blocks_collection
+weight: 1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

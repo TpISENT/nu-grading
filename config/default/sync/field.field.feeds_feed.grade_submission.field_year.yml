@@ -1,0 +1,36 @@
+uuid: f24156ce-bedd-42c4-8ae9-e1f79e419f65
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.grade_submission
+    - field.storage.feeds_feed.field_year
+    - webform.webform.grade_checking_system
+  module:
+    - webform
+id: feeds_feed.grade_submission.field_year
+field_name: field_year
+entity_type: feeds_feed
+bundle: grade_submission
+label: Year
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 34e50d0c-25c0-4a90-81a3-dcdf8f7f954a
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  default_data: ''
+  status: open
+  open: ''
+  close: ''
+field_type: webform

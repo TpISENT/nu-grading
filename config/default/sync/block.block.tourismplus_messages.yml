@@ -1,0 +1,22 @@
+uuid: fe668f03-59cf-4d46-9ada-74725f57dc56
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tourismplus
+_core:
+  default_config_hash: uyiNSPg8VniIb8oDcKZHVe98XajT2pJDJOSkz0fPYf4
+id: tourismplus_messages
+theme: tourismplus
+region: system_messages
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

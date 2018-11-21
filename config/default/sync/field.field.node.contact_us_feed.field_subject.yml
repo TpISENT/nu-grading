@@ -1,0 +1,19 @@
+uuid: 41396261-c3a0-4e8d-9c88-e03e34c2f93b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subject
+    - node.type.contact_us_feed
+id: node.contact_us_feed.field_subject
+field_name: field_subject
+entity_type: node
+bundle: contact_us_feed
+label: Subject
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

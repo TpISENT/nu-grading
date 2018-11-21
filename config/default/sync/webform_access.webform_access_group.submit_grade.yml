@@ -1,0 +1,10 @@
+uuid: 2829f1df-03cb-467c-8687-184ed827a1f1
+langcode: en
+status: true
+dependencies: {  }
+id: submit_grade
+label: 'SUBMIT GRADE'
+description: ''
+type: ''
+permissions:
+  - create

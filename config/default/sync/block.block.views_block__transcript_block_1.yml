@@ -1,0 +1,38 @@
+uuid: 6cf49e69-ae57-4ebb-b9ea-1a0d1e0ced20
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.transcript
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - tourismplus
+id: views_block__transcript_block_1
+theme: tourismplus
+region: banner
+weight: 0
+provider: null
+plugin: 'views_block:transcript-block_1'
+settings:
+  id: 'views_block:transcript-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      secretariats: secretariats
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

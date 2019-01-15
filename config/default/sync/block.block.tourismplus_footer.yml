@@ -13,7 +13,7 @@ _core:
 id: tourismplus_footer
 theme: tourismplus
 region: hidden_blocks_collection
-weight: -3
+weight: -9
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

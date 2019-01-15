@@ -1,0 +1,11 @@
+uuid: 06984740-8bba-479d-aab4-53102909247d
+langcode: en
+status: true
+dependencies: {  }
+id: create_nu_grades
+label: 'Create NU Grades'
+weight: 7
+is_admin: null
+permissions:
+  - 'create webform'
+  - 'create webform content'

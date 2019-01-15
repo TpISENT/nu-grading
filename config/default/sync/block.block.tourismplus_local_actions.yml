@@ -8,8 +8,8 @@ _core:
   default_config_hash: KKW624UjBlBepjhn2qVc2sAfHsd_m_FcJyie4_n3uZ4
 id: tourismplus_local_actions
 theme: tourismplus
-region: hidden_blocks_collection
-weight: -1
+region: content
+weight: -10
 provider: null
 plugin: local_actions_block
 settings:

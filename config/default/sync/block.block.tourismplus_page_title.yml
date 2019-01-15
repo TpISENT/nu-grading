@@ -8,8 +8,8 @@ _core:
   default_config_hash: gtBwb9YxwsIxefrfC5gmkg6MnKHk6kmGo64b81JZwpk
 id: tourismplus_page_title
 theme: tourismplus
-region: hidden_blocks_collection
-weight: 1
+region: content
+weight: -11
 provider: null
 plugin: page_title_block
 settings:

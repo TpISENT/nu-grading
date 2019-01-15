@@ -1,0 +1,39 @@
+uuid: 55abc283-e901-44db-a940-a5a2ea2e8c93
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.nugrading
+  module:
+    - system
+    - user
+    - webform
+  theme:
+    - tourismplus
+id: webform_3
+theme: tourismplus
+region: content_top
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'GRADE SUBMISSION FORM'
+  provider: webform
+  label_display: visible
+  webform_id: nugrading
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      create_nu_grades: create_nu_grades
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

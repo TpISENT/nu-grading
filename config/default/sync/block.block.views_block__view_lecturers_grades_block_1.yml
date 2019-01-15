@@ -12,8 +12,8 @@ dependencies:
     - tourismplus
 id: views_block__view_lecturers_grades_block_1
 theme: tourismplus
-region: content_top
-weight: 0
+region: hidden_blocks_collection
+weight: -1
 provider: null
 plugin: 'views_block:view_lecturers_grades-block_1'
 settings:

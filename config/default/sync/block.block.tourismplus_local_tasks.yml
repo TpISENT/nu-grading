@@ -8,8 +8,8 @@ _core:
   default_config_hash: wKpcQbVK9j7ZbBij15v2hE_0PAsIxja1ptgA2Hzs7eg
 id: tourismplus_local_tasks
 theme: tourismplus
-region: hidden_blocks_collection
-weight: 0
+region: content
+weight: -9
 provider: null
 plugin: local_tasks_block
 settings:

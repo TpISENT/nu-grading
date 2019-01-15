@@ -12,8 +12,8 @@ dependencies:
     - tourismplus
 id: views_block__view_submitted_grade_block_1
 theme: tourismplus
-region: content
-weight: -7
+region: hidden_blocks_collection
+weight: 0
 provider: null
 plugin: 'views_block:view_submitted_grade-block_1'
 settings:
@@ -33,6 +33,7 @@ visibility:
     id: user_role
     roles:
       anonymous: anonymous
+      administrator: administrator
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'

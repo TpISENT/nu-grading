@@ -10,8 +10,8 @@ _core:
   default_config_hash: viW5WMqbapuC7pwRSpoTfIo1EvtdP0vcTYcRl7FKC78
 id: tourismplus_help
 theme: tourismplus
-region: hidden_blocks_collection
-weight: 2
+region: system_messages
+weight: -11
 provider: null
 plugin: help_block
 settings:

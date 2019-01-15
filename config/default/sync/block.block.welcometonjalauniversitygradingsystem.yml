@@ -1,0 +1,25 @@
+uuid: c4695cf3-ae8f-4ec8-bccc-c5c7c38dda56
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:ae03828e-b113-4d68-9add-a2e3c131745c'
+  module:
+    - block_content
+  theme:
+    - tourismplus
+id: welcometonjalauniversitygradingsystem
+theme: tourismplus
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:ae03828e-b113-4d68-9add-a2e3c131745c'
+settings:
+  id: 'block_content:ae03828e-b113-4d68-9add-a2e3c131745c'
+  label: 'Welcome to Njala University Grading System'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

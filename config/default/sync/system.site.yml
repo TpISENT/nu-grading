@@ -1,9 +1,9 @@
 uuid: ea3e45dd-0205-474d-a359-393f71aa0d84
-name: 'DEPARTEMNT OF PHYSICS AND COMPUTER SCIENCE'
+name: 'DEPARTMENT OF PHYSICS AND COMPUTER SCIENCE'
 mail: abuman600@gmail.com
 slogan: ''
 page:
-  403: ''
+  403: /user/login
   404: ''
   front: /node
 admin_compact_mode: false
@@ -12,3 +12,4 @@ langcode: en
 default_langcode: en
 _core:
   default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

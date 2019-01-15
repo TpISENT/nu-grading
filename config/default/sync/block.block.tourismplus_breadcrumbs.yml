@@ -10,8 +10,8 @@ _core:
   default_config_hash: ltYx729RbzeS4RHRTos6EhuwOeehaCddwzIfLxy7YFs
 id: tourismplus_breadcrumbs
 theme: tourismplus
-region: content_top
-weight: -5
+region: hidden_blocks_collection
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:

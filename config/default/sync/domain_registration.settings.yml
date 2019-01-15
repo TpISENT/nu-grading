@@ -1,0 +1,7 @@
+method: '0'
+pattern: "njala.edu.sl\r\nschools.edu.sl\r\ntpisent.com\r\n"
+message: 'Non njala.edu.sl email addresses are not allowed to access this system'
+actions: null
+form_build_id: form-cbwC8F3ynJ3WkVfnhFoV_47gegmCHQK7bvf3gS_WYOU
+form_token: 4K7c2tDLKLNTY105Cf-NVljX-KpT5vzoFbaoxgKM5zg
+form_id: domain_registration_admin_form

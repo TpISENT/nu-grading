@@ -1,0 +1,10 @@
+uuid: 81807588-cb85-4ab5-a9c5-0e5b28505143
+langcode: en
+status: true
+dependencies: {  }
+id: submit_nu_grade_submission
+label: 'SUBMIT NU GRADE SUBMISSION'
+description: ''
+type: ''
+permissions:
+  - administer

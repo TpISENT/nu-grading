@@ -115,7 +115,7 @@ subfooter_background_color: 'region--light-typography region--colored-secondary-
 subfooter_bottom_blocks_paddings: false
 subfooter_bottom_region_paddings: false
 reading_time: 1
-share_links: 1
+share_links: 0
 print_button: 1
 font_resize: 1
 post_progress: 1
@@ -195,9 +195,9 @@ google_maps_key: AIzaSyDyL-4KyWw_3hp-0jmZLGcJ3zMWkkJ44VI
 _core:
   default_config_hash: FhmcNI5WE2kd_IEgapR4Po3qxqvLbJGOmM926EjmQmc
 features:
-  node_user_picture: true
-  comment_user_picture: true
-  comment_user_verification: true
+  node_user_picture: false
+  comment_user_picture: false
+  comment_user_verification: false
   favicon: false
 logo:
   use_default: false

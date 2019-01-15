@@ -6,8 +6,9 @@ dependencies:
     - webform_analysis
 third_party_settings:
   webform_analysis:
-    chart_type: PieChart
-    components: {  }
+    chart_type: ColumnChart
+    components:
+      - program
 open: null
 close: null
 weight: 0
@@ -18,7 +19,7 @@ id: grade_checking_system
 title: Grade_Checking_System
 description: ''
 category: ''
-elements: "flexbox:\n  '#type': webform_flexbox\n  '#align_items': center\n  academic_year:\n    '#type': textfield\n    '#title': 'Academic Year'\n    '#required': true\n  program:\n    '#type': select\n    '#title': Program\n    '#options':\n      1: 'BSc (Hons) Computer Science'\n      2: 'BSc (Hons) Business and Information Technology'\n      3: 'BSc (Hons) Electronics and Telecommunication'\n      4: 'BSc (Hons) Energy Studies'\n      5: 'BSc (Hons) Physics with Computer Science'\n      6: 'HND Electronics and Computer Technology'\n      7: 'HND Computer Science'\n      8: 'OND Electronics and Computer Technology'\n      9: 'OND Computer Science'\n    '#required': true\n  semester:\n    '#type': select\n    '#title': Semester\n    '#options':\n      1: 'First Semester'\n      2: 'Second Semester'\n      3: Sessional\n    '#required': true\n  id:\n    '#type': number\n    '#title': ID\n    '#required': true\n    '#unique': true\n  year:\n    '#type': select\n    '#title': Year\n    '#options':\n      1: 'First Year'\n      2: 'Second Year'\n      3: 'Third Year'\n      4: 'Fourth Year'\n    '#required': true\n  surname:\n    '#type': textfield\n    '#title': 'Student Name'\n    '#required': true\nflexbox_01:\n  '#type': webform_flexbox\n  '#align_items': center\nflexbox_02:\n  '#type': webform_flexbox\n  course:\n    '#type': textfield\n    '#title': Course\n    '#multiple': true\n    '#required': true\n  grade:\n    '#type': textfield\n    '#title': Grade\n    '#multiple': true\n    '#required': true"
+elements: "flexbox:\n  '#type': webform_flexbox\n  '#align_items': center\n  academic_year:\n    '#type': textfield\n    '#title': 'Academic Year'\n    '#required': true\n  program:\n    '#type': select\n    '#title': Program\n    '#options':\n      1: 'BSc (Hons) Computer Science'\n      2: 'BSc (Hons) Business and Information Technology'\n      3: 'BSc (Hons) Electronics and Telecommunication'\n      4: 'BSc (Hons) Energy Studies'\n      5: 'BSc (Hons) Physics with Computer Science'\n      6: 'HND Electronics and Computer Technology'\n      7: 'HND Computer Science'\n      8: 'OND Electronics and Computer Technology'\n      9: 'OND Computer Science'\n    '#required': true\n  semester:\n    '#type': select\n    '#title': Semester\n    '#options':\n      1: First\n      2: Second\n      3: Sessional\n    '#required': true\n  id:\n    '#type': number\n    '#title': ID\n    '#required': true\n    '#format_items': comma\n  year:\n    '#type': select\n    '#title': Year\n    '#options':\n      1: First\n      2: Second\n      3: Third\n      4: Fourth\n    '#required': true\n  surname:\n    '#type': textfield\n    '#title': 'Student Name'\n    '#required': true\nflexbox_01:\n  '#type': webform_flexbox\n  '#align_items': center\nflexbox_02:\n  '#type': webform_flexbox\n  course:\n    '#type': textfield\n    '#title': Course\n    '#multiple': true\n    '#required': true\n  grade:\n    '#type': textfield\n    '#title': Grade\n    '#multiple': true\n    '#required': true\nsgpa:\n  '#type': number\n  '#title': SGPA\n  '#required': true"
 css: ''
 javascript: ''
 settings:
@@ -102,8 +103,8 @@ settings:
   preview_excluded_elements: {  }
   preview_exclude_empty: true
   preview_exclude_empty_checkbox: false
-  draft: none
-  draft_multiple: false
+  draft: authenticated
+  draft_multiple: true
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''

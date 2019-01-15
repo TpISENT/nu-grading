@@ -1,0 +1,41 @@
+uuid: 64a7f5e2-d158-4766-a3b4-4b928e911156
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.nugrade
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - tourismplus
+id: views_block__nugrade_block_1
+theme: tourismplus
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:nugrade-block_1'
+settings:
+  id: 'views_block:nugrade-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      secretariats: secretariats
+      head_of_department: head_of_department
+      students: students
+      dean: dean
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

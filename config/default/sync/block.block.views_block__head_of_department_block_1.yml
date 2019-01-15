@@ -12,8 +12,8 @@ dependencies:
     - tourismplus
 id: views_block__head_of_department_block_1
 theme: tourismplus
-region: banner
-weight: 0
+region: hidden_blocks_collection
+weight: -3
 provider: null
 plugin: 'views_block:head_of_department-block_1'
 settings:

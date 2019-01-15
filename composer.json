@@ -20,7 +20,7 @@
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/address": "^1.4",
-        "drupal/admin_toolbar": "^1.24",
+        "drupal/admin_toolbar": "^1.25",
         "drupal/antibot": "^1.2",
         "drupal/auto_entitylabel": "^2.1@beta",
         "drupal/autologout": "^1.0",

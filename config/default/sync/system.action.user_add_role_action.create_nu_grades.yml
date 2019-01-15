@@ -1,0 +1,14 @@
+uuid: c2e27029-1f91-48e4-99c2-34020aab5419
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.create_nu_grades
+  module:
+    - user
+id: user_add_role_action.create_nu_grades
+label: 'Add the Create NU Grades role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: create_nu_grades

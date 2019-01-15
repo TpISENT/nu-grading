@@ -12,8 +12,8 @@ dependencies:
     - tourismplus
 id: webform_2
 theme: tourismplus
-region: banner
-weight: 0
+region: hidden_blocks_collection
+weight: -5
 provider: null
 plugin: webform_block
 settings:

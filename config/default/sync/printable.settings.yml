@@ -1,24 +1,24 @@
 printable_entities:
   block: block
-  block_content: block_content
-  node: node
-  webform_submission: webform_submission
+  shortcut: shortcut
+  taxonomy_term: taxonomy_term
   webform: webform
+  webform_submission: webform_submission
   menu_link_content: menu_link_content
+  block_content: '0'
   comment: '0'
   contact_message: '0'
   feeds_subscription: '0'
   feeds_feed: '0'
   file: '0'
-  shortcut: '0'
-  taxonomy_term: '0'
+  node: '0'
   tour: '0'
   user: '0'
 open_target_blank: true
 css_include: ''
 extract_links: '1'
 save_pdf: true
-pdf_tool: null
+pdf_tool: wkhtmltopdf
 paper_size: A4
 page_orientation: portrait
 path_to_binary: ''
@@ -28,11 +28,14 @@ close_window: false
 list_attribute: true
 printable_print_link_locations:
   node: node
+  comment: comment
   user: user
-  comment: '0'
 printable_pdf_link_locations:
   node: node
   comment: '0'
   user: '0'
 _core:
   default_config_hash: 1Zx0Kjl4zSJQScIJ6Nv5z_DDYfYKiEzS-LRnLBoKZS8
+ignore_warnings: 0
+print_pdf_use_xvfb_run: 0
+path_to_xfb_run: ''

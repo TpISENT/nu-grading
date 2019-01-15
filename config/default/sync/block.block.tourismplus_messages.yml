@@ -10,7 +10,7 @@ _core:
   default_config_hash: uyiNSPg8VniIb8oDcKZHVe98XajT2pJDJOSkz0fPYf4
 id: tourismplus_messages
 theme: tourismplus
-region: system_messages
+region: hidden_blocks_collection
 weight: -6
 provider: null
 plugin: system_messages_block

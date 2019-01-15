@@ -22,8 +22,10 @@ module:
   ctools_views: 0
   datetime: 0
   dblog: 0
+  domain_registration: 0
   drupalgap: 0
   dynamic_page_cache: 0
+  eck: 0
   editor: 0
   feeds: 0
   field: 0
@@ -34,25 +36,30 @@ module:
   force_password_change: 0
   help: 0
   history: 0
+  honeypot: 0
   image: 0
   imce: 0
   jdrupal: 0
-  jsonapi: 0
   libraries: 0
   link: 0
   menu_ui: 0
   migrate: 0
   migrate_source_csv: 0
+  multiple_registration: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
+  pathauto: 0
   pdf_api: 0
+  pdf_using_mpdf: 0
   phpexcel: 0
   printable: 0
   printable_pdf: 0
   prlp: 0
+  publishcontent: 0
   quickedit: 0
+  r4032login: 0
   rdf: 0
   rename_admin_paths: 0
   rest: 0

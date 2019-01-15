@@ -4,8 +4,17 @@ status: true
 dependencies:
   config:
     - system.menu.main
+    - user.role.administrator
+    - user.role.authenticated
+    - user.role.create_nu_grades
+    - user.role.dean
+    - user.role.head_of_department
+    - user.role.secretariats
+    - user.role.students
+    - user.role.submitgrade
     - webform.webform.course_contents
   module:
+    - user
     - webform
     - webform_views
 id: course_content
@@ -24,8 +33,17 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            authenticated: authenticated
+            administrator: administrator
+            secretariats: secretariats
+            submitgrade: submitgrade
+            head_of_department: head_of_department
+            create_nu_grades: create_nu_grades
+            students: students
+            dean: dean
       cache:
         type: tag
         options: {  }
@@ -472,6 +490,7 @@ display:
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
         - user
+        - user.roles
       tags: {  }
   page_1:
     display_plugin: page
@@ -494,4 +513,5 @@ display:
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
         - user
+        - user.roles
       tags: {  }

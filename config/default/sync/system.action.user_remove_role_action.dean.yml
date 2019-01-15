@@ -1,0 +1,14 @@
+uuid: b626ce03-2ccd-4b65-9538-17358585ba82
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dean
+  module:
+    - user
+id: user_remove_role_action.dean
+label: 'Remove the Dean role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: dean

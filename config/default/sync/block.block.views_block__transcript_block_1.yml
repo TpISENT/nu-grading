@@ -12,8 +12,8 @@ dependencies:
     - tourismplus
 id: views_block__transcript_block_1
 theme: tourismplus
-region: banner
-weight: 0
+region: hidden_blocks_collection
+weight: -4
 provider: null
 plugin: 'views_block:transcript-block_1'
 settings:

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b515e85b86058d957b4bd9f24a55d3e6",
+    "content-hash": "246e273027b43ca08c8d32d1150fe7f4",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3218,6 +3218,61 @@
             }
         },
         {
+            "name": "drupal/content_access",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/content_access",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/content_access-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "8ead8bd29ac8cb26731710fc03a5bde288e37bbd"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1510069084",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "good_man",
+                    "homepage": "https://www.drupal.org/user/265439"
+                },
+                {
+                    "name": "id.tarzanych",
+                    "homepage": "https://www.drupal.org/user/2776543"
+                }
+            ],
+            "description": "Provides flexible content access control.",
+            "homepage": "https://www.drupal.org/project/content_access",
+            "support": {
+                "source": "http://cgit.drupalcode.org/content_access"
+            }
+        },
+        {
             "name": "drupal/contentimport",
             "version": "4.1.0",
             "source": {
@@ -5312,6 +5367,61 @@
             }
         },
         {
+            "name": "drupal/multiple_registration",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/multiple_registration",
+                "reference": "8.x-2.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/multiple_registration-8.x-2.6.zip",
+                "reference": "8.x-2.6",
+                "shasum": "31e443032f7b7a2da064dc4c9bf9c2608a0d6b38"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.6",
+                    "datestamp": "1545920580",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Liannoy",
+                    "homepage": "https://www.drupal.org/user/2415162"
+                },
+                {
+                    "name": "Oleksandr Ivanchenko",
+                    "homepage": "https://www.drupal.org/user/857858"
+                },
+                {
+                    "name": "ysamoylenko",
+                    "homepage": "https://www.drupal.org/user/3554629"
+                }
+            ],
+            "description": "Adds ability to create several registration pages",
+            "homepage": "https://www.drupal.org/project/multiple_registration",
+            "support": {
+                "source": "http://cgit.drupalcode.org/multiple_registration"
+            }
+        },
+        {
             "name": "drupal/password_policy",
             "version": "3.0.0-alpha4",
             "source": {
@@ -5495,6 +5605,52 @@
             "time": "2018-05-08T00:30:00+00:00"
         },
         {
+            "name": "drupal/pdf_using_mpdf8",
+            "version": "1.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/pdf_using_mpdf8",
+                "reference": "8.x-1.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/pdf_using_mpdf8-8.x-1.0-alpha2.zip",
+                "reference": "8.x-1.0-alpha2",
+                "shasum": "87432c2083282f576fb514c63a1123d2dae5cacb"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1511957884",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "gauravjeet",
+                    "homepage": "https://www.drupal.org/user/2248054"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/pdf_using_mpdf8",
+            "support": {
+                "source": "http://cgit.drupalcode.org/pdf_using_mpdf8"
+            }
+        },
+        {
             "name": "drupal/permissions_by_term",
             "version": "2.4.0",
             "source": {
@@ -5619,7 +5775,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/printable",
-                "reference": "536c669635e53b0a816dbc42aeee2edd35f15275"
+                "reference": "d5c6b9da4d1ae3aa865818efe8e5f7a7430dd121"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -5636,8 +5792,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0+22-dev",
-                    "datestamp": "1526022484",
+                    "version": "8.x-1.0+36-dev",
+                    "datestamp": "1544094780",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5664,7 +5820,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/printable"
             },
-            "time": "2018-06-20T06:04:58+00:00"
+            "time": "2018-12-06T11:15:58+00:00"
         },
         {
             "name": "drupal/prlp",
@@ -5723,6 +5879,69 @@
             "homepage": "https://www.drupal.org/project/prlp",
             "support": {
                 "source": "http://cgit.drupalcode.org/prlp"
+            }
+        },
+        {
+            "name": "drupal/publishcontent",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/publishcontent",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/publishcontent-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "903f1dd106dd5082d07e1a927fd3e8f8e7741e52"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1473318539",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Georges",
+                    "homepage": "https://www.drupal.org/user/172312"
+                },
+                {
+                    "name": "aaronbauman",
+                    "homepage": "https://www.drupal.org/user/384578"
+                },
+                {
+                    "name": "jacobroufa",
+                    "homepage": "https://www.drupal.org/user/168080"
+                },
+                {
+                    "name": "johnennew",
+                    "homepage": "https://www.drupal.org/user/1150042"
+                },
+                {
+                    "name": "malaussene",
+                    "homepage": "https://www.drupal.org/user/79249"
+                }
+            ],
+            "description": "Adds a 'Publish' or 'Unpublish' link on the node edit/view pages, and a 'Publish Link' field if the Views module is enabled.",
+            "homepage": "https://www.drupal.org/project/publishcontent",
+            "support": {
+                "source": "http://cgit.drupalcode.org/publishcontent"
             }
         },
         {
@@ -13802,7 +14021,6 @@
         "drupal/config_readonly": 10,
         "drupal/diff": 5,
         "drupal/drupalgap": 15,
-        "drupal/eck": 15,
         "drupal/encrypt": 5,
         "drupal/feeds": 15,
         "drupal/flexslider": 10,

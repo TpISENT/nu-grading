@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "51cc944e552297dcd9167af4c9614304",
+    "content-hash": "f79bfd7891a157f55f329b44eae36f42",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2385,6 +2385,57 @@
             }
         },
         {
+            "name": "drupal/betterlogin",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/betterlogin",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/betterlogin-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "6b9ab142bf563685346d2b4e2db46ada209ed6ad"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1515587585",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Yogesh Pawar",
+                    "homepage": "https://www.drupal.org/user/2922907"
+                },
+                {
+                    "name": "theamoeba",
+                    "homepage": "https://www.drupal.org/user/251700"
+                }
+            ],
+            "description": "Make the login screens better :)",
+            "homepage": "https://www.drupal.org/project/betterlogin",
+            "support": {
+                "source": "http://cgit.drupalcode.org/betterlogin"
+            }
+        },
+        {
             "name": "drupal/bulk_content_operation",
             "version": "3.0.0-alpha2",
             "source": {
@@ -2431,6 +2482,58 @@
             "homepage": "https://www.drupal.org/project/bulk_content_operation",
             "support": {
                 "source": "http://cgit.drupalcode.org/bulk_content_operation"
+            }
+        },
+        {
+            "name": "drupal/bulk_user_registration",
+            "version": "1.1.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/bulk_user_registration",
+                "reference": "8.x-1.1-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bulk_user_registration-8.x-1.1-alpha1.zip",
+                "reference": "8.x-1.1-alpha1",
+                "shasum": "2f57467bd0d9191064993f589ed470359dc773aa"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1-alpha1",
+                    "datestamp": "1525014184",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Shamsher Alam",
+                    "homepage": "https://www.drupal.org/u/Shamsher_Alam",
+                    "role": "Author"
+                },
+                {
+                    "name": "naveen.sunkara",
+                    "homepage": "https://www.drupal.org/user/3554863"
+                }
+            ],
+            "description": "The simple Drupal module to import user from CSV",
+            "homepage": "https://drupal.org/project/bulk_user_registration",
+            "support": {
+                "source": "http://cgit.drupalcode.org/bulk_user_registration"
             }
         },
         {
@@ -3754,6 +3857,61 @@
             }
         },
         {
+            "name": "drupal/datatables",
+            "version": "1.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/datatables",
+                "reference": "8.x-1.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/datatables-8.x-1.0-rc1.zip",
+                "reference": "8.x-1.0-rc1",
+                "shasum": "ecf4b90565e75babf2cb8f95b2f905cc8ecaf56d"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1472406239",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Arkener",
+                    "homepage": "https://www.drupal.org/user/2284182"
+                },
+                {
+                    "name": "diqidoq",
+                    "homepage": "https://www.drupal.org/user/1001934"
+                },
+                {
+                    "name": "duellj",
+                    "homepage": "https://www.drupal.org/user/168159"
+                }
+            ],
+            "description": "Provides integration of the jquery DataTables plugin into views.",
+            "homepage": "https://www.drupal.org/project/datatables",
+            "support": {
+                "source": "http://cgit.drupalcode.org/datatables"
+            }
+        },
+        {
             "name": "drupal/delete_all",
             "version": "1.0.0",
             "source": {
@@ -4285,6 +4443,67 @@
             "homepage": "https://www.drupal.org/project/encrypt",
             "support": {
                 "source": "http://cgit.drupalcode.org/encrypt"
+            }
+        },
+        {
+            "name": "drupal/entity_print",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entity_print",
+                "reference": "8.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_print-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "fea398bd6f088bc4a7064fce46f28aa241fb1a34"
+            },
+            "require": {
+                "dompdf/dompdf": "~0.8.0",
+                "drupal/core": "~8.0"
+            },
+            "suggest": {
+                "mikehaertl/phpwkhtmltopdf": "PhpWkhtmlToPdf provides the PHP library to use Wkhtmltopdf"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.1",
+                    "datestamp": "1533220070",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Dougherty",
+                    "homepage": "https://www.drupal.org/u/benjy"
+                },
+                {
+                    "name": "pameeela",
+                    "homepage": "https://www.drupal.org/user/1431110"
+                }
+            ],
+            "description": "PDF print solution for any Drupal entity.",
+            "homepage": "http://drupal.org/project/entity_print",
+            "keywords": [
+                "PDF",
+                "drupal",
+                "print",
+                "web"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/entity_print"
             }
         },
         {
@@ -6664,6 +6883,53 @@
             }
         },
         {
+            "name": "drupal/super_login",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/super_login",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/super_login-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "c6a581dcc266ba2158d101b3314fbcd9f16bf6e9"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1525797784",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "quantumized",
+                    "homepage": "https://www.drupal.org/user/61221"
+                }
+            ],
+            "description": "Improves the Drupal login and registration forms.",
+            "homepage": "https://www.drupal.org/project/super_login",
+            "support": {
+                "source": "http://cgit.drupalcode.org/super_login"
+            }
+        },
+        {
             "name": "drupal/superfish",
             "version": "1.2.0",
             "source": {
@@ -7013,6 +7279,57 @@
             }
         },
         {
+            "name": "drupal/view_custom_table",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/view_custom_table",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/view_custom_table-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "8488f162817539ca81f18fd639800b0dfb50ac61"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1552638484",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "sagar_cis",
+                    "homepage": "https://www.drupal.org/user/3487653"
+                },
+                {
+                    "name": "sagarwani",
+                    "homepage": "https://www.drupal.org/user/3221452"
+                }
+            ],
+            "description": "Extends views to use custom table data.",
+            "homepage": "https://www.drupal.org/project/view_custom_table",
+            "support": {
+                "source": "http://cgit.drupalcode.org/view_custom_table"
+            }
+        },
+        {
             "name": "drupal/views_bootstrap",
             "version": "3.1.0",
             "source": {
@@ -7072,6 +7389,65 @@
             ],
             "support": {
                 "source": "http://cgit.drupalcode.org/views_bootstrap"
+            }
+        },
+        {
+            "name": "drupal/views_flipped_table",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_flipped_table",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_flipped_table-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "801d0d46b66f748eb5da99536c04fdb3b47f6029"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1539796980",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "KarlShea",
+                    "homepage": "https://www.drupal.org/user/294283"
+                },
+                {
+                    "name": "infojunkie",
+                    "homepage": "https://www.drupal.org/user/48424"
+                },
+                {
+                    "name": "marcoka",
+                    "homepage": "https://www.drupal.org/user/255202"
+                },
+                {
+                    "name": "naught101",
+                    "homepage": "https://www.drupal.org/user/44216"
+                }
+            ],
+            "description": "Table style with rows and columns flipped.",
+            "homepage": "https://www.drupal.org/project/views_flipped_table",
+            "support": {
+                "source": "http://cgit.drupalcode.org/views_flipped_table"
             }
         },
         {
@@ -14016,9 +14392,11 @@
     "stability-flags": {
         "drupal/auto_entitylabel": 10,
         "drupal/better_exposed_filters": 15,
+        "drupal/bulk_user_registration": 15,
         "drupal/coffee": 10,
         "drupal/conditional_fields": 15,
         "drupal/config_readonly": 10,
+        "drupal/datatables": 5,
         "drupal/diff": 5,
         "drupal/drupalgap": 15,
         "drupal/encrypt": 5,

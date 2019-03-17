@@ -1,15 +1,14 @@
-uuid: 6cb44c74-a3ab-4481-b096-7c51bac05049
+uuid: 3dad4f09-2577-474c-ac25-6e9166638691
 langcode: en
 status: true
 dependencies:
   module:
-    - views_bootstrap
     - webform
     - webform_views
-id: transcript
-label: TRANSCRIPT
+id: administration
+label: Administration
 module: views
-description: ''
+description: 'Administrative page for grade viewing and editing'
 tag: ''
 base_table: webform_submission
 base_field: sid
@@ -51,18 +50,141 @@ display:
           items_per_page: null
           offset: 0
       style:
-        type: views_bootstrap_table
+        type: table
+        options:
+          grouping:
+            -
+              field: webform_submission_value_4
+              rendered: true
+              rendered_strip: false
+          row_class: ''
+          default_row_class: true
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            webform_submission_value: webform_submission_value
+            webform_submission_value_6: webform_submission_value_6
+            webform_submission_value_5: webform_submission_value_5
+            webform_submission_value_9: webform_submission_value_9
+            webform_submission_value_8: webform_submission_value_8
+            webform_submission_value_4: webform_submission_value_4
+            webform_submission_value_1: webform_submission_value_1
+            webform_submission_value_2: webform_submission_value_2
+            webform_submission_value_3: webform_submission_value_3
+            webform_submission_value_7: webform_submission_value_7
+            changed: changed
+            completed: completed
+            edit_webform_submission: edit_webform_submission
+            uid: uid
+          info:
+            webform_submission_value:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            webform_submission_value_6:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            webform_submission_value_5:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            webform_submission_value_9:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            webform_submission_value_8:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            webform_submission_value_4:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            webform_submission_value_1:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            webform_submission_value_2:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            webform_submission_value_3:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            webform_submission_value_7:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            changed:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            completed:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            edit_webform_submission:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            uid:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: '-1'
+          empty_table: false
       row:
         type: fields
       fields:
         webform_submission_value:
           id: webform_submission_value
-          table: webform_submission_field_grade_checking_system_academic_year
+          table: webform_submission_field_grading_system_academic_year
           field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Academic Year'
+          label: 'AC Year'
           exclude: false
           alter:
             alter_text: false
@@ -107,9 +229,9 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_5:
-          id: webform_submission_value_5
-          table: webform_submission_field_grade_checking_system_semester
+        webform_submission_value_6:
+          id: webform_submission_value_6
+          table: webform_submission_field_grading_system_semester
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -159,61 +281,9 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_7:
-          id: webform_submission_value_7
-          table: webform_submission_field_grade_checking_system_year
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Year
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          webform_element_format: value
-          webform_multiple_value: true
-          webform_multiple_delta: 0
-          plugin_id: webform_submission_field
-        webform_submission_value_4:
-          id: webform_submission_value_4
-          table: webform_submission_field_grade_checking_system_program
+        webform_submission_value_5:
+          id: webform_submission_value_5
+          table: webform_submission_field_grading_system_program
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -263,14 +333,14 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_6:
-          id: webform_submission_value_6
-          table: webform_submission_field_grade_checking_system_surname
+        webform_submission_value_9:
+          id: webform_submission_value_9
+          table: webform_submission_field_grading_system_year
           field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Student Name'
+          label: Year
           exclude: false
           alter:
             alter_text: false
@@ -315,9 +385,61 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_3:
-          id: webform_submission_value_3
-          table: webform_submission_field_grade_checking_system_id
+        webform_submission_value_8:
+          id: webform_submission_value_8
+          table: webform_submission_field_grading_system_student_name
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Name
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
+          plugin_id: webform_submission_field
+        webform_submission_value_4:
+          id: webform_submission_value_4
+          table: webform_submission_field_grading_system_id
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -366,10 +488,10 @@ display:
           webform_element_format: value
           webform_multiple_value: true
           webform_multiple_delta: 0
-          plugin_id: webform_submission_field_numeric
+          plugin_id: webform_submission_field
         webform_submission_value_1:
           id: webform_submission_value_1
-          table: webform_submission_field_grade_checking_system_course
+          table: webform_submission_field_grading_system_course
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -421,7 +543,59 @@ display:
           plugin_id: webform_submission_field
         webform_submission_value_2:
           id: webform_submission_value_2
-          table: webform_submission_field_grade_checking_system_grade
+          table: webform_submission_field_grading_system_creadit_hour
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: CHR
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
+          plugin_id: webform_submission_field
+        webform_submission_value_3:
+          id: webform_submission_value_3
+          table: webform_submission_field_grading_system_grade
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -471,6 +645,125 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
+        webform_submission_value_7:
+          id: webform_submission_value_7
+          table: webform_submission_field_grading_system_sgpa
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: SGPA
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
+          plugin_id: webform_submission_field_numeric
+        changed:
+          id: changed
+          table: webform_submission
+          field: changed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Changed
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: timestamp
+          settings:
+            date_format: medium
+            custom_date_format: ''
+            timezone: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: webform_submission
+          entity_field: changed
+          plugin_id: field
         completed:
           id: completed
           table: webform_submission
@@ -538,6 +831,59 @@ display:
           entity_type: webform_submission
           entity_field: completed
           plugin_id: field
+        edit_webform_submission:
+          id: edit_webform_submission
+          table: webform_submission
+          field: edit_webform_submission
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Edit
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: edit
+          output_url_as_text: false
+          absolute: false
+          entity_type: webform_submission
+          plugin_id: entity_link_edit
         uid:
           id: uid
           table: webform_submission
@@ -606,16 +952,13 @@ display:
       filters:
         webform_submission_value:
           id: webform_submission_value
-          table: webform_submission_field_grade_checking_system_id
+          table: webform_submission_field_grading_system_id
           field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
           operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
+          value: ''
           group: 1
           exposed: true
           expose:
@@ -633,10 +976,11 @@ display:
               anonymous: '0'
               administrator: '0'
               secretariats: '0'
-              submitgrade: '0'
+              head_of_department: '0'
+              create_nu_grades: '0'
+              students: '0'
+              dean: '0'
             placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -649,19 +993,16 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: webform_submission_numeric_filter
+          plugin_id: webform_submission_field_filter
         webform_submission_value_1:
           id: webform_submission_value_1
-          table: webform_submission_field_grade_checking_system_id
+          table: webform_submission_field_grading_system_id
           field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
           operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
+          value: ''
           group: 1
           exposed: false
           expose:
@@ -677,8 +1018,6 @@ display:
             remember_roles:
               authenticated: authenticated
             placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -691,21 +1030,9 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: webform_submission_numeric_filter
-      sorts:
-        webform_submission_value:
-          id: webform_submission_value
-          table: webform_submission_field_grade_checking_system_academic_year
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: true
-          expose:
-            label: 'Academic Year'
-          plugin_id: webform_submission_field_sort
-      title: TRANSCRIPT
+          plugin_id: webform_submission_field_filter
+      sorts: {  }
+      title: Administration
       header: {  }
       footer: {  }
       empty: {  }
@@ -715,15 +1042,13 @@ display:
       filter_groups:
         operator: OR
         groups:
-          1: AND
+          1: OR
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
         - user
       tags: {  }
   block_1:
@@ -733,14 +1058,27 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: /TRANSCRIPT
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
+        - user
+      tags: {  }
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: admingradeview
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
         - user
       tags: {  }

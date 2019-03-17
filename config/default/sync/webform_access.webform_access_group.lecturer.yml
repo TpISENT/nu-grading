@@ -1,0 +1,10 @@
+uuid: c420fbfe-863a-47ec-9147-a8c1c3063180
+langcode: en
+status: true
+dependencies: {  }
+id: lecturer
+label: Lecturer
+description: ''
+type: ''
+permissions:
+  - create

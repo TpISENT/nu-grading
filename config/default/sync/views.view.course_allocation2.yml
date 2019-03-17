@@ -3,8 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - system.menu.main
+    - user.role.dean
+    - user.role.head_of_department
+    - user.role.secretariats
+    - user.role.students
     - webform.webform.course_allocation
   module:
+    - user
     - views_bootstrap
     - webform
     - webform_views
@@ -24,8 +30,13 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            secretariats: secretariats
+            head_of_department: head_of_department
+            students: students
+            dean: dean
       cache:
         type: tag
         options: {  }
@@ -109,66 +120,14 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_5:
-          id: webform_submission_value_5
-          table: webform_submission_field_course_allocation_program
+        webform_submission_value_2:
+          id: webform_submission_value_2
+          table: webform_submission_field_course_allocation_semester
           field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
-          label: Program
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          webform_element_format: value
-          webform_multiple_value: true
-          webform_multiple_delta: 0
-          plugin_id: webform_submission_field
-        webform_submission_value_7:
-          id: webform_submission_value_7
-          table: webform_submission_field_course_allocation_year
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Year
+          label: Semester
           exclude: false
           alter:
             alter_text: false
@@ -215,12 +174,12 @@ display:
           plugin_id: webform_submission_field
         webform_submission_value_1:
           id: webform_submission_value_1
-          table: webform_submission_field_course_allocation_course_code
+          table: webform_submission_field_course_allocation_department
           field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Course Code'
+          label: Department
           exclude: false
           alter:
             alter_text: false
@@ -265,162 +224,6 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_2:
-          id: webform_submission_value_2
-          table: webform_submission_field_course_allocation_course_description
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: 'Course Description'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          webform_element_format: value
-          webform_multiple_value: true
-          webform_multiple_delta: 0
-          plugin_id: webform_submission_field
-        webform_submission_value_6:
-          id: webform_submission_value_6
-          table: webform_submission_field_course_allocation_staff
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Staff
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          webform_element_format: value
-          webform_multiple_value: true
-          webform_multiple_delta: 0
-          plugin_id: webform_submission_field
-        webform_submission_value_3:
-          id: webform_submission_value_3
-          table: webform_submission_field_course_allocation_creadit_hrs
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: 'Creadit Hrs'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          webform_element_format: value
-          webform_multiple_value: '1'
-          webform_multiple_delta: '0'
-          plugin_id: webform_submission_field_numeric
         webform_submission_value_4:
           id: webform_submission_value_4
           table: webform_submission_field_course_allocation_download
@@ -474,18 +277,56 @@ display:
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
       filters:
-        webform_id:
-          id: webform_id
-          table: webform_submission
-          field: webform_id
-          value:
-            course_allocation: course_allocation
-          entity_type: webform_submission
-          entity_field: webform_id
-          plugin_id: bundle
+        webform_submission_value:
+          id: webform_submission_value
+          table: webform_submission_field_course_allocation_department
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: webform_submission_value_op
+            label: Department
+            description: ''
+            use_operator: false
+            operator: webform_submission_value_op
+            identifier: webform_submission_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              secretariats: '0'
+              head_of_department: '0'
+              create_nu_grades: '0'
+              students: '0'
+              dean: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: Department
+            description: null
+            identifier: webform_submission_value
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1: {  }
+              2: {  }
+              3: {  }
+          plugin_id: webform_submission_select_filter
         webform_submission_value_1:
           id: webform_submission_value_1
-          table: webform_submission_field_course_allocation_program
+          table: webform_submission_field_course_allocation_semester
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -496,7 +337,7 @@ display:
           exposed: true
           expose:
             operator_id: webform_submission_value_1_op
-            label: Program
+            label: Semester
             description: ''
             use_operator: false
             operator: webform_submission_value_1_op
@@ -509,7 +350,10 @@ display:
               anonymous: '0'
               administrator: '0'
               secretariats: '0'
-              submitgrade: '0'
+              head_of_department: '0'
+              create_nu_grades: '0'
+              students: '0'
+              dean: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -524,6 +368,46 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: webform_submission_select_filter
+        webform_id:
+          id: webform_id
+          table: webform_submission
+          field: webform_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            course_allocation: course_allocation
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: webform_submission
+          entity_field: webform_id
+          plugin_id: bundle
       sorts:
         webform_submission_value:
           id: webform_submission_value
@@ -544,6 +428,12 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      link_url: ''
+      link_display: '0'
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
@@ -552,6 +442,7 @@ display:
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
         - user
+        - user.roles
       tags: {  }
   block_1:
     display_plugin: block
@@ -569,4 +460,37 @@ display:
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
         - user
+        - user.roles
+      tags: {  }
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: course
+      menu:
+        type: normal
+        title: 'Course Allocation'
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: main
+      tab_options:
+        type: none
+        title: ''
+        description: ''
+        weight: 0
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
+        - user
+        - user.roles
       tags: {  }

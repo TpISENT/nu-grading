@@ -1,8 +1,9 @@
-uuid: 00c49be5-db7b-4258-9539-20f720655695
+uuid: 3dc774db-2f3e-444f-bcce-31975f0a29c6
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.webform.body
     - field.field.node.webform.webform
     - node.type.webform
@@ -12,10 +13,10 @@ dependencies:
     - webform
 _core:
   default_config_hash: 3r1i0UMUbeNHhvmiqHDYznoS4G9XR1jq6lQ49r80lDE
-id: node.webform.default
+id: node.webform.full
 targetEntityType: node
 bundle: webform
-mode: default
+mode: full
 content:
   body:
     label: hidden
@@ -26,14 +27,13 @@ content:
     region: content
   links:
     weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
   webform:
     weight: 102
     label: hidden
-    settings:
-      source_entity: true
+    settings: {  }
     third_party_settings: {  }
     type: webform_entity_reference_entity_view
     region: content

@@ -7,4 +7,8 @@ label: Students
 weight: 8
 is_admin: null
 permissions:
+  - 'access user contact forms'
+  - 'change own username'
   - 'view any webform submission'
+  - 'view own webform submission'
+  - 'view webform submissions any node'

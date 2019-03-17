@@ -7,6 +7,8 @@ label: 'Head of Department'
 weight: 5
 is_admin: null
 permissions:
+  - 'create webform'
   - 'delete any webform submission'
   - 'edit any webform submission'
   - 'view own webform submission'
+  - 'view webform submissions any node'

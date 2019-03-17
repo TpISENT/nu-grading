@@ -1,25 +1,29 @@
-uuid: 34e50d0c-25c0-4a90-81a3-dcdf8f7f954a
+uuid: 1932c20c-74bb-45a5-9260-378982e14a91
 langcode: en
 status: open
 dependencies:
   module:
+    - honeypot
     - webform_analysis
 third_party_settings:
+  honeypot:
+    honeypot: true
   webform_analysis:
-    chart_type: ColumnChart
+    chart_type: PieChart
     components:
-      - program
+      - student_name
+      - sgpa
 open: null
 close: null
 weight: 0
 uid: 1
 template: false
 archive: false
-id: grade_checking_system
-title: Grade_Checking_System
+id: grading_system
+title: 'Grading system'
 description: ''
 category: ''
-elements: "flexbox:\n  '#type': webform_flexbox\n  '#align_items': center\n  academic_year:\n    '#type': textfield\n    '#title': 'Academic Year'\n    '#required': true\n  program:\n    '#type': select\n    '#title': Program\n    '#options':\n      1: 'BSc (Hons) Computer Science'\n      2: 'BSc (Hons) Business and Information Technology'\n      3: 'BSc (Hons) Electronics and Telecommunication'\n      4: 'BSc (Hons) Energy Studies'\n      5: 'BSc (Hons) Physics with Computer Science'\n      6: 'HND Electronics and Computer Technology'\n      7: 'HND Computer Science'\n      8: 'OND Electronics and Computer Technology'\n      9: 'OND Computer Science'\n    '#required': true\n  semester:\n    '#type': select\n    '#title': Semester\n    '#options':\n      1: First\n      2: Second\n      3: Sessional\n    '#required': true\n  id:\n    '#type': number\n    '#title': ID\n    '#required': true\n    '#format_items': comma\n  year:\n    '#type': select\n    '#title': Year\n    '#options':\n      1: First\n      2: Second\n      3: Third\n      4: Fourth\n    '#required': true\n  surname:\n    '#type': textfield\n    '#title': 'Student Name'\n    '#required': true\nflexbox_01:\n  '#type': webform_flexbox\n  '#align_items': center\nflexbox_02:\n  '#type': webform_flexbox\n  course:\n    '#type': textfield\n    '#title': Course\n    '#multiple': true\n    '#required': true\n  grade:\n    '#type': textfield\n    '#title': Grade\n    '#multiple': true\n    '#required': true\nsgpa:\n  '#type': number\n  '#title': SGPA\n  '#required': true"
+elements: "flexbox:\n  '#type': webform_flexbox\n  academic_year:\n    '#type': textfield\n    '#title': 'Academic Year'\n    '#required': true\n  program:\n    '#type': select\n    '#title': Program\n    '#options':\n      1: 'BSc (Hons) Business and Information Technology'\n      2: 'BSc (Hons) Computer Science'\n      3: 'BSc (Hons) Electronics and Telecommunication'\n      4: 'BSc(Hons) in Energy Studies'\n      5: 'Bsc(Hons) in Statistics'\n      6: 'BSc(Hons) in Mathematics'\n      7: 'BSc(Hons) in Agricultural Engineering'\n      8: 'Higher Diploma in Electronics and Computer Technology'\n      9: 'Higher Diploma in Computer Science and Information Technology'\n      10: 'Ordinary Diploma in Computer Hardware and Electronics'\n      11: 'Ordinary Diploma in Computer Science and Information Technology'\n      12: 'Higher Diploma in Industrial Technology'\n      13: 'Higher Diploma in Statistics'\n      14: 'Ordinary Diploma in Statistics'\n      15: 'BSc(Hons) Industrial Technology'\n      16: 'BSc(Hons) Mathematics and Statistics'\n    '#required': true\n  semester:\n    '#type': select\n    '#title': Semester\n    '#options':\n      1: First\n      2: Second\n      3: Sessional\n    '#required': true\n  id:\n    '#type': textfield\n    '#title': ID\n    '#required': true\n  year:\n    '#type': select\n    '#title': Year\n    '#options':\n      1: First\n      2: Second\n      3: Third\n      4: Fourth\n    '#required': true\n  student_name:\n    '#type': textfield\n    '#title': 'Student Name'\n    '#required': true\nflexbox_01:\n  '#type': webform_flexbox\n  course:\n    '#type': textfield\n    '#title': Course\n    '#multiple': true\n    '#required': true\n  creadit_hour:\n    '#type': textfield\n    '#title': 'Creadit Hour'\n    '#multiple': true\n    '#required': true\n  grade:\n    '#type': textfield\n    '#title': Grade\n    '#multiple': true\n    '#required': true\nsgpa:\n  '#type': number\n  '#title': SGPA\n_a_excellent_b_good_c_fairly_good_d_barely_passed_f_failing_grad:\n  '#type': label\n  '#title': ' A....Excellent B....Good C....Fairly Good D....Barely Passed E....Failing Grade F...Completely Fail'\nf_complete_failure_w_withdrawal_ab_absent_from_program_dr_droppe:\n  '#type': label\n  '#title': 'F....Complete Failure: W....Withdrawal: AB....Absent from Program: Dr....Dropped from Programme:'"
 css: ''
 javascript: ''
 settings:
@@ -28,12 +32,12 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  form_title: both
-  form_submit_once: false
+  form_title: source_entity_webform
+  form_submit_once: true
   form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
-  form_previous_submissions: true
+  form_previous_submissions: false
   form_confidential: false
   form_confidential_message: ''
   form_convert_anonymous: false
@@ -41,7 +45,7 @@ settings:
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_reset: true
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
@@ -57,19 +61,28 @@ settings:
   form_access_denied_attributes: {  }
   form_file_limit: ''
   submission_label: ''
-  submission_log: false
+  submission_log: true
   submission_views: {  }
   submission_views_replace:
     webform_routes: {  }
     node_routes: {  }
   submission_user_columns:
+    - serial
+    - created
+    - remote_addr
+    - label
+    - completed
+    - changed
+    - element__academic_year
     - element__program
-    - element__year
     - element__semester
+    - element__year
     - element__id
-    - element__surname
+    - element__student_name
     - element__course
+    - element__creadit_hour
     - element__grade
+    - element__sgpa
     - operations
   submission_user_duplicate: false
   submission_access_denied: default
@@ -95,7 +108,7 @@ settings:
   wizard_confirmation: true
   wizard_confirmation_label: ''
   wizard_track: ''
-  preview: 0
+  preview: 1
   preview_label: ''
   preview_title: ''
   preview_message: ''
@@ -103,8 +116,8 @@ settings:
   preview_excluded_elements: {  }
   preview_exclude_empty: true
   preview_exclude_empty_checkbox: false
-  draft: authenticated
-  draft_multiple: true
+  draft: none
+  draft_multiple: false
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
@@ -138,27 +151,20 @@ settings:
 access:
   create:
     roles:
-      - authenticated
-    users:
-      - 2
+      - administrator
+      - create_nu_grades
+    users: {  }
     permissions: {  }
   view_any:
-    roles:
-      - anonymous
-      - authenticated
-    users:
-      - 2
+    roles: {  }
+    users: {  }
     permissions: {  }
   update_any:
-    roles:
-      - administrator
-      - head_of_department
+    roles: {  }
     users: {  }
     permissions: {  }
   delete_any:
-    roles:
-      - administrator
-      - head_of_department
+    roles: {  }
     users: {  }
     permissions: {  }
   purge_any:
@@ -166,27 +172,26 @@ access:
     users: {  }
     permissions: {  }
   view_own:
-    roles:
-      - anonymous
-      - authenticated
+    roles: {  }
     users: {  }
     permissions: {  }
   update_own:
-    roles:
-      - administrator
+    roles: {  }
     users: {  }
     permissions: {  }
   delete_own:
-    roles:
-      - administrator
+    roles: {  }
     users: {  }
     permissions: {  }
   administer:
-    roles:
-      - administrator
+    roles: {  }
     users: {  }
     permissions: {  }
   test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
     roles: {  }
     users: {  }
     permissions: {  }

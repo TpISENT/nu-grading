@@ -1,9 +1,0 @@
-uuid: 53b91bc6-360d-4466-bc79-5d41155140a5
-langcode: en
-status: true
-dependencies: {  }
-id: submitgrade
-label: Submitgrade
-weight: 4
-is_admin: null
-permissions: {  }

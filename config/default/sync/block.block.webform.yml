@@ -1,26 +1,27 @@
-uuid: 36177584-e184-4ff1-8f38-0e851129892d
+uuid: 29922be4-904a-4a5f-bbec-918265fee3ca
 langcode: en
 status: true
 dependencies:
   config:
-    - webform.webform.submit_grade
+    - webform.webform.grading_system
   module:
     - system
+    - user
     - webform
   theme:
     - tourismplus
 id: webform
 theme: tourismplus
-region: hidden_blocks_collection
-weight: -2
+region: banner
+weight: -7
 provider: null
 plugin: webform_block
 settings:
   id: webform_block
-  label: 'SUBMIT GRADE'
+  label: 'WELCOME TO NJALA GRADE SUBMISSION PORTAL'
   provider: webform
   label_display: visible
-  webform_id: submit_grade
+  webform_id: grading_system
   default_data: ''
   redirect: false
 visibility:
@@ -29,3 +30,10 @@ visibility:
     pages: '<front>'
     negate: false
     context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      create_nu_grades: create_nu_grades
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

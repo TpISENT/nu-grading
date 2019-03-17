@@ -14,6 +14,9 @@ printable_entities:
   node: '0'
   tour: '0'
   user: '0'
+  id: '0'
+  name: '0'
+  program: '0'
 open_target_blank: true
 css_include: ''
 extract_links: '1'

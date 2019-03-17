@@ -1,0 +1,9 @@
+uuid: 368cb24b-dc01-46ab-bd79-23f5683b9d27
+langcode: en
+status: true
+dependencies: {  }
+id: lecturer
+label: Lecturer
+weight: 11
+is_admin: null
+permissions: {  }

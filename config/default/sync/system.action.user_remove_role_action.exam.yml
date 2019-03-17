@@ -1,0 +1,14 @@
+uuid: ffa40195-b13e-4dbe-9437-9b92292211ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.exam
+  module:
+    - user
+id: user_remove_role_action.exam
+label: 'Remove the Exam role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: exam

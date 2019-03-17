@@ -1,0 +1,14 @@
+uuid: 25e06224-f1c2-4a05-80ed-508a31aca4af
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.exam
+  module:
+    - user
+id: user_add_role_action.exam
+label: 'Add the Exam role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: exam

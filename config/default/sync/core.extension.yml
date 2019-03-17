@@ -2,6 +2,7 @@ module:
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
+  autologout: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
@@ -15,6 +16,7 @@ module:
   comment: 0
   config: 0
   contact: 0
+  content_access: 0
   contentimport: 0
   contextual: 0
   csv_importer: 0
@@ -34,6 +36,7 @@ module:
   filter: 0
   fontawesome: 0
   force_password_change: 0
+  forum: 0
   help: 0
   history: 0
   honeypot: 0
@@ -92,8 +95,6 @@ module:
   menu_link_content: 1
   webform_bootstrap: 1
   views: 10
-  admin_menu: 100
-  admin_menu_toolbar: 101
   standard: 1000
 theme:
   stable: 0

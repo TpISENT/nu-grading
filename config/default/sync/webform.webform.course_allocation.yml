@@ -20,7 +20,7 @@ id: course_allocation
 title: 'Course Allocation'
 description: ''
 category: ''
-elements: "flexbox_01:\n  '#type': webform_flexbox\n  academic_year:\n    '#type': textfield\n    '#title': 'Academic Year'\n    '#required': true\n  year:\n    '#type': select\n    '#title': Year\n    '#options':\n      1: 'First Year'\n      2: 'Second Year'\n      3: 'Third Year'\n      4: 'Fourth Year'\n    '#required': true\n  program:\n    '#type': select\n    '#title': Program\n    '#options':\n      1: 'BSc (Hons) Computer Science'\n      2: 'BSc (Hons) Business and Information Technology'\n      3: 'BSc (Hons) Electronics and Telecommunication'\n      4: 'BSc (Hons) Energy Studies'\n      5: 'BSc (Hons) Physics with Computer Science'\n      6: 'HND Electronics and Computer Technology'\n      7: 'HD Computer Science'\n      8: 'OD Electronics and Computer Technology'\n      9: 'OD Computer Science'\n    '#required': true\nflexbox:\n  '#type': webform_flexbox\n  course_code:\n    '#type': textfield\n    '#title': 'Course Code'\n    '#multiple': true\n    '#required': true\n  course_description:\n    '#type': textfield\n    '#title': 'Course Description'\n    '#multiple': true\n    '#maxlength': '30'\n    '#required': true\n  creadit_hrs:\n    '#type': number\n    '#title': 'Creadit Hrs'\n    '#multiple': true\n    '#required': true\n  staff:\n    '#type': textfield\n    '#title': Staff\n    '#multiple': true\n    '#maxlength': '10'\n  download:\n    '#type': webform_document_file\n    '#title': Download\n    '#file_extensions': 'pdf doc docx  xls xlsx '\n    '#required': true"
+elements: "flexbox:\n  '#type': webform_flexbox\n  academic_year:\n    '#type': textfield\n    '#title': 'Academic Year'\n    '#placeholder': 'e.g 2016/2017'\n    '#required': true\n  semester:\n    '#type': select\n    '#title': Semester\n    '#options':\n      1: First\n      2: Second\n    '#required': true\n  department:\n    '#type': select\n    '#title': Department\n    '#options':\n      1: 'Physics and Computer Science'\n      2: 'Department of Industrial Technology'\n      3: 'Department of Agricultural and Biosystems Engineering'\n      4: 'Department of Maths and Statistics'\n    '#required': true\n  download:\n    '#type': managed_file\n    '#title': Download\n    '#required': true\n    '#max_filesize': '16'\n    '#file_extensions': 'pdf doc docx xls xlsx  zip'"
 css: ''
 javascript: ''
 settings:
@@ -129,7 +129,7 @@ settings:
 access:
   create:
     roles:
-      - authenticated
+      - head_of_department
     users: {  }
     permissions: {  }
   view_any:
@@ -165,6 +165,10 @@ access:
     users: {  }
     permissions: {  }
   test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
     roles: {  }
     users: {  }
     permissions: {  }

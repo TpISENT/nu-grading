@@ -12,7 +12,7 @@ id: course_contents
 title: 'Course Contents'
 description: ''
 category: ''
-elements: "flexbox:\n  '#type': webform_flexbox\n  academic_year:\n    '#type': textfield\n    '#title': 'Academic Year'\n    '#required': true\n  semester:\n    '#type': select\n    '#title': Semester\n    '#options':\n      1: 'First Semester'\n      2: 'Second Semester'\n    '#required': true\n  program:\n    '#type': select\n    '#title': Program\n    '#options':\n      1: 'BSc (Hons) Computer Science'\n      2: 'BSc (Hons) Business and Information Technology'\n      3: 'BSc (Hons) Electronics and Telecommunication'\n      4: 'BSc (Hons) Energy Studies'\n      5: 'BSc (Hons) Physics with Computer Science'\n      6: 'HND Electronics and Computer Technology'\n      7: 'HD Computer Science'\n      8: 'OD Computer Science'\n      9: 'HD Electronic and Telecommunication'\n      10: 'OD Electronics and Telecommunication'\n    '#required': true\n  course_code:\n    '#type': textfield\n    '#title': 'Course Code'\n    '#required': true\n  attachment:\n    '#type': webform_document_file\n    '#title': Attachment\n    '#file_extensions': 'pdf doc docx zip'\n    '#required': true"
+elements: "flexbox:\n  '#type': webform_flexbox\n  academic_year:\n    '#type': textfield\n    '#title': 'Academic Year'\n    '#required': true\n  semester:\n    '#type': select\n    '#title': Semester\n    '#options':\n      1: 'First Semester'\n      2: 'Second Semester'\n    '#required': true\n  department:\n    '#type': select\n    '#title': Department\n    '#options':\n      1: 'Physics and Computer Science'\n      2: 'Department of Industrial Technology'\n      3: 'Department of Agricultural and Biosystems Engineering'\n      4: 'Department of Maths and Statistics'\n    '#required': true\n  program:\n    '#type': select\n    '#title': Program\n    '#options':\n      1: 'BSc (Hons) Computer Science'\n      2: 'BSc (Hons) Business and Information Technology'\n      3: 'BSc (Hons) Electronics and Telecommunication'\n      4: 'BSc(Hons) Energy Studies'\n      5: 'BSc(Hons) Agricultural Engineering'\n      6: 'BSc(Hons) Statistics'\n      7: 'Higher Diploma in Computer Science and Information Technology'\n      8: 'Higher Diploma in Electronics and Computer Technology'\n      9: 'Ordinary Diploma in Computer Science and Information Technology'\n      10: 'Ordinary Diploma in Computer Hardware and Electronics'\n      11: 'Higher Diploma in Statistics'\n      12: 'Ordinary Diploma in Statistics'\n      13: 'Higher Diploma in Industrial Technology'\n    '#required': true\n  attachment:\n    '#type': webform_document_file\n    '#title': Attachment\n    '#file_extensions': 'pdf doc docx zip'\n    '#required': true"
 css: ''
 javascript: ''
 settings:
@@ -121,8 +121,9 @@ settings:
 access:
   create:
     roles:
-      - authenticated
-    users: {  }
+      - head_of_department
+    users:
+      - 3
     permissions: {  }
   view_any:
     roles: {  }
@@ -153,10 +154,15 @@ access:
     users: {  }
     permissions: {  }
   administer:
-    roles: {  }
+    roles:
+      - head_of_department
     users: {  }
     permissions: {  }
   test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
     roles: {  }
     users: {  }
     permissions: {  }

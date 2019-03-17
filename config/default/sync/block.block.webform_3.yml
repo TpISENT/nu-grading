@@ -1,9 +1,9 @@
-uuid: 55abc283-e901-44db-a940-a5a2ea2e8c93
+uuid: eea36ea6-a067-408f-bfb7-ab7f780ce138
 langcode: en
 status: true
 dependencies:
   config:
-    - webform.webform.nugrading
+    - webform.webform.course_materials
   module:
     - system
     - user
@@ -12,16 +12,16 @@ dependencies:
     - tourismplus
 id: webform_3
 theme: tourismplus
-region: content_top
+region: banner
 weight: 0
 provider: null
 plugin: webform_block
 settings:
   id: webform_block
-  label: 'GRADE SUBMISSION FORM'
+  label: 'Course Material'
   provider: webform
   label_display: visible
-  webform_id: nugrading
+  webform_id: course_materials
   default_data: ''
   redirect: false
 visibility:
@@ -33,7 +33,7 @@ visibility:
   user_role:
     id: user_role
     roles:
-      create_nu_grades: create_nu_grades
+      lecturer: lecturer
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'

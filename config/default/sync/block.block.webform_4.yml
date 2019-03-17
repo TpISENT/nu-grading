@@ -1,28 +1,29 @@
-uuid: 6cf49e69-ae57-4ebb-b9ea-1a0d1e0ced20
+uuid: d488bd59-e990-4615-adac-ec72512d6e54
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.transcript
+    - webform.webform.course_contents
   module:
     - system
     - user
-    - views
+    - webform
   theme:
     - tourismplus
-id: views_block__transcript_block_1
+id: webform_4
 theme: tourismplus
-region: hidden_blocks_collection
-weight: -4
+region: banner
+weight: 0
 provider: null
-plugin: 'views_block:transcript-block_1'
+plugin: webform_block
 settings:
-  id: 'views_block:transcript-block_1'
-  label: ''
-  provider: views
+  id: webform_block
+  label: Syllabus
+  provider: webform
   label_display: visible
-  views_label: ''
-  items_per_page: none
+  webform_id: course_contents
+  default_data: ''
+  redirect: false
 visibility:
   request_path:
     id: request_path
@@ -32,7 +33,7 @@ visibility:
   user_role:
     id: user_role
     roles:
-      secretariats: secretariats
+      head_of_department: head_of_department
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'

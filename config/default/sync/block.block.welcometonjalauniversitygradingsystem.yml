@@ -1,6 +1,6 @@
 uuid: c4695cf3-ae8f-4ec8-bccc-c5c7c38dda56
 langcode: en
-status: false
+status: true
 dependencies:
   content:
     - 'block_content:basic:ae03828e-b113-4d68-9add-a2e3c131745c'
@@ -10,7 +10,7 @@ dependencies:
     - tourismplus
 id: welcometonjalauniversitygradingsystem
 theme: tourismplus
-region: content
+region: hidden_blocks_collection
 weight: -8
 provider: null
 plugin: 'block_content:ae03828e-b113-4d68-9add-a2e3c131745c'

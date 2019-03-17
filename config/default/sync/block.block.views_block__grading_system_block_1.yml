@@ -1,27 +1,27 @@
-uuid: 46e3199f-1045-4637-85ce-81e8f9b533b9
+uuid: 97732d1d-40b0-4afc-9fec-7b8c3cd23a9f
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.view_submitted_grade
+    - views.view.grading_system
   module:
     - system
     - user
     - views
   theme:
     - tourismplus
-id: views_block__view_submitted_grade_block_1
+id: views_block__grading_system_block_1
 theme: tourismplus
-region: hidden_blocks_collection
-weight: 0
+region: banner
+weight: -8
 provider: null
-plugin: 'views_block:view_submitted_grade-block_1'
+plugin: 'views_block:grading_system-block_1'
 settings:
-  id: 'views_block:view_submitted_grade-block_1'
-  label: ''
+  id: 'views_block:grading_system-block_1'
+  label: 'SUBMIT ID '
   provider: views
   label_display: visible
-  views_label: ''
+  views_label: 'SUBMIT ID '
   items_per_page: none
 visibility:
   request_path:
@@ -32,8 +32,10 @@ visibility:
   user_role:
     id: user_role
     roles:
-      anonymous: anonymous
-      administrator: administrator
+      secretariats: secretariats
+      head_of_department: head_of_department
+      students: students
+      dean: dean
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'

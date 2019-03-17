@@ -1,0 +1,11 @@
+uuid: d59a4700-cad2-4ee9-b873-be17e7bdb86e
+langcode: en
+status: true
+dependencies: {  }
+id: view_grades
+label: 'View grades'
+description: ''
+type: ''
+permissions:
+  - view_any
+  - view_own

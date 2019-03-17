@@ -1,9 +1,9 @@
-uuid: 75f11f09-2168-4306-adc7-a5873c33d1c4
+uuid: 37e754be-3be9-4c2d-98ee-92b67580125b
 langcode: en
 status: true
 dependencies:
   config:
-    - webform.webform.grade_checking_system
+    - webform.webform.course_allocation
   module:
     - system
     - user
@@ -12,28 +12,28 @@ dependencies:
     - tourismplus
 id: webform_2
 theme: tourismplus
-region: hidden_blocks_collection
-weight: -5
+region: banner
+weight: 0
 provider: null
 plugin: webform_block
 settings:
   id: webform_block
-  label: 'Submit Grades'
+  label: 'Course Allocation'
   provider: webform
   label_display: visible
-  webform_id: grade_checking_system
-  default_data: '[current-user:roles]'
+  webform_id: course_allocation
+  default_data: ''
   redirect: false
 visibility:
-  user_role:
-    id: user_role
-    roles:
-      submitgrade: submitgrade
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
     pages: '<front>'
     negate: false
     context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      head_of_department: head_of_department
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
